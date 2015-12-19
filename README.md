@@ -8,9 +8,9 @@
 
 ```php
 /**
- * Implements hook_simple_validator_info().
+ * Implements hook_validator_info().
  */
-function MYMODULE_simple_validator_info(){
+function MYMODULE_validator_info(){
   
   $items = array();
   
@@ -74,7 +74,8 @@ Callback возвращает булево значение "TRUE", если п�
 
 ________________
 
-# Модуль Simple Validators
+# Модуль Antinoob Validate
+
 
 Добавляет несколько простых валидаторов: 
 
@@ -84,7 +85,7 @@ ________________
 
 ________________
 
-# Модуль Mat Filter
+# Модуль Antiswearing Validate
 
 Добавляет валидатор матов. Для валидации используется PHP-класс "[php-obscene-censor-rus](https://github.com/vearutop/php-obscene-censor-rus)".
 
