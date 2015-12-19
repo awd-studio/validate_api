@@ -17,7 +17,7 @@ function MYMODULE_simple_validator_info(){
   $items[] = array(
     'type'        => 'text',                        // Field module
     'name'        => 'simple_validate',             // Validator machine name
-    'title'       => 'Validate API',             // Validator title
+    'title'       => 'Validate API',                // Validator title
     'description' => 'Simple Discription',          // Validator description
     'callback'    => 'simple_validator_callback',   // Validation callback
   );
