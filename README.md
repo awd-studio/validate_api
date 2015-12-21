@@ -1,5 +1,7 @@
 # Модуль Validate API
 
+При участии @Gormartsen
+
 Позволяет использовать собственные валидаторы для полей материала.
 
 Включить существующие валидаторы можно на странице настройки материала.
@@ -8,16 +10,16 @@
 
 ```php
 /**
- * Implements hook_simple_validator_info().
+ * Implements hook_validator_info().
  */
-function MYMODULE_simple_validator_info(){
+function MYMODULE_validator_info(){
   
   $items = array();
   
   $items[] = array(
     'type'        => 'text',                        // Field module
     'name'        => 'simple_validate',             // Validator machine name
-    'title'       => 'Validate API',             // Validator title
+    'title'       => 'Validate API',                // Validator title
     'description' => 'Simple Discription',          // Validator description
     'callback'    => 'simple_validator_callback',   // Validation callback
   );
@@ -74,7 +76,8 @@ Callback возвращает булево значение "TRUE", если п�
 
 ________________
 
-# Модуль Simple Validators
+# Модуль Antinoob Validate
+
 
 Добавляет несколько простых валидаторов: 
 
@@ -84,7 +87,7 @@ ________________
 
 ________________
 
-# Модуль Mat Filter
+# Модуль Antiswearing Validate
 
 Добавляет валидатор матов. Для валидации используется PHP-класс "[php-obscene-censor-rus](https://github.com/vearutop/php-obscene-censor-rus)".
 
